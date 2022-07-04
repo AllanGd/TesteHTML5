@@ -16,6 +16,8 @@ h1 {
 #colorPicker {
   width: 8rem;
   height: 2rem;
+  border: 0ch;
+  margin-bottom: 1rem;
 }
 
 button {
