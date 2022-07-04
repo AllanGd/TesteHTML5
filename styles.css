@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;  
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#colorPicker {
+  width: 8rem;
+  height: 2rem;
+}
+
+button {
+  height: 2rem;  
+}
