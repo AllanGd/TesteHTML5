@@ -1,7 +1,15 @@
 function coletar(){
   let cor = document.getElementById('colorPicker').value;
+  let valor;
   
-  let valor = document.querySelector('input[name="local"]:checked').value;
+  try{
+    valor = document.querySelector('input[name="local"]:checked').value;
+  }
+  catch (ex) {
+    alert(ex.message)
+    valor = null
+  }
+
   if (valor!==null){
     
     switch (valor){
@@ -14,10 +22,16 @@ function coletar(){
       default:
       break;
     }
+  }else{
+    alert("Escolha uma das opções;" + valor)
   }
 }
 function limpar(){
   document.getElementById('cabecalho').style.color= "black";
   document.getElementById('corpo').style.backgroundColor= "white";
   document.getElementById('colorPicker').value = "#000"
+
+  var ele = document.getElementsByName("local");
+   for(var i=0;i<ele.length;i++)
+      ele[i].checked = false;
 }

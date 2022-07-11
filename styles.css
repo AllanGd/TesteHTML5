@@ -20,6 +20,6 @@ h1 {
   margin-bottom: 1rem;
 }
 
-button {
-  height: 2rem;  
+.alert{
+  display: none;
 }
