@@ -5,8 +5,7 @@ function coletar(){
   try{
     valor = document.querySelector('input[name="local"]:checked').value;
   }
-  catch (ex) {
-    alert(ex.message)
+  catch (ex) {    
     valor = null
   }
 
@@ -23,7 +22,7 @@ function coletar(){
       break;
     }
   }else{
-    alert("Escolha uma das opções;" + valor)
+    alert("Escolha uma das opções acima.")
   }
 }
 function limpar(){

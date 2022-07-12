@@ -19,38 +19,42 @@
       <h1 id="cabecalho">Olá mundo.</h1>
       <input type="color" id="colorPicker" />
       <form>
-        <input
-          type="radio"
-          class="form-check-input"
-          id="fundo"
-          value="fundo"
-          name="local"
-        />
-        <label class="form-check-label" for="fundo">Plano de fundo</label>
-        <input
-          type="radio"
-          class="form-check-input"
-          id="titulo"
-          value="titulo"
-          name="local"
-        />
-        <label class="form-check-label" for="titulo">Titulo</label>
+        <div class="container">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="fundo"
+            value="fundo"
+            name="local"
+          />
+          <label class="form-check-label" for="fundo">Plano de fundo</label>
+          <input
+            type="radio"
+            class="form-check-input"
+            id="titulo"
+            value="titulo"
+            name="local"
+          />
+          <label class="form-check-label" for="titulo">Titulo</label>
+        </div>
         <div
           class="alert alert-warning alert-dismissible fade show"
-          role="alert"          
+          role="alert"
         >
           Escolha uma das opções acima.
-          <button
-            type="button"
-            class="btn-close"            
-            aria-label="Close"
-          ></button>
+          <button type="button" class="btn-close" aria-label="Close"></button>
         </div>
         <div>
-          <button class="btn btn-outline-primary" onclick="coletar();return false;">
+          <button
+            class="btn btn-outline-primary"
+            onclick="coletar();return false;"
+          >
             Colorir
           </button>
-          <button class="btn btn-outline-warning" onclick="limpar();return false;">
+          <button
+            class="btn btn-outline-warning"
+            onclick="limpar();return false;"
+          >
             Limpar
           </button>
         </div>
