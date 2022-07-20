@@ -34,7 +34,7 @@ h1 {
 
 }
 
-.teste{
+.teste{  
   background-color: blue;
-  background-image: "bola.jpg";
+  background-image: url("bola.jpg");
 }
